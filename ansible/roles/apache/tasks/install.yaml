@@ -1,0 +1,17 @@
+- name: instlando apaache no debian
+  package:
+   name: apache2
+  when: ansible_os_family == "Debian"
+
+- name: instlando apaache no debian
+  package:
+   name: httpd
+  when: ansible_os_family == "RedHat"
+
+- name: dado start no apache no centos
+  service: 
+   name: httpd
+   state: started
+  when: ansible_os_family == "RedHat"
+
+

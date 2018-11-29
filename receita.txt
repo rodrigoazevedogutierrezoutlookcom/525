@@ -1,0 +1,13 @@
+nicializar o repositorio
+git init
+#adicionar arquivo editado
+git add
+#para versionar a edicao e commitar
+git commit -m "mensagem"
+#adicionando repositorio remoto
+git remote add nomedorepo URL
+#para enviar o codigo que ja foi comitado
+git push nomedorepo branch
+#paea clonar um repositorio e ja vir tudo pronto
+git clone URL
+~                                                  

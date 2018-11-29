@@ -1,0 +1,5 @@
+- name: instalar um servidor web apache em qualquer distro
+  include: install.yaml
+
+- name: criar um site com o conteudo
+  include: files.yaml

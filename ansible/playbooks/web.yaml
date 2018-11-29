@@ -1,0 +1,5 @@
+- name: role do exercicio
+  hosts: all
+   roles:
+    - web
+   

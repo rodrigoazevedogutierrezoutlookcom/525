@@ -1,0 +1,21 @@
+---
+- name: a playbook do exercicio
+  hosts: all
+  vars:
+   seunome: rodrigo
+  tasks:
+   - name: criando usuario no sistema
+     user:
+      name: "{{item}}"
+     with_items:
+      - "{{seunome}}"
+      - developer
+      - devops
+
+   - name: instalando pacotes iniciais
+     package:
+      name:
+       - vim
+       - htop
+       - cowsay
+       - figlet 

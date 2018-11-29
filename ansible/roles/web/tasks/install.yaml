@@ -1,0 +1,12 @@
+- name: instalar servidor web
+  package:
+   name:
+    - apache2
+  when: ansible_os_family = "Debian"
+
+- name: instalar servidor web
+  package:
+   name:
+    - httpd
+  when: ansible_os_family = "RedHat" 
+      
